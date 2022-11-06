@@ -1,0 +1,18 @@
+
+post http://localhost:3500/api/profesores/registrar
+Content-Type: application/json
+
+{
+    "correo": "jose.mora@profesor.com",
+    "clave": "123"
+}
+
+//login
+###
+post http://localhost:3500/api/profesores/login
+Content-Type: application/json
+
+{
+    "correo": "jose.mora@profesor.com",
+    "clave": "123"
+}

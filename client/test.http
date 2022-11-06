@@ -1,0 +1,64 @@
+//GET estidiantes
+GET http://localhost:3500/api/estudiantes
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYyZTdkOTE3NjhjMGUwYWExOGExMDgiLCJjb3JyZW8iOiJqb3NlLm1vcmFAcHJvZmVzb3IuY29tIiwiaWF0IjoxNjY3NDI5MDA3LCJleHAiOjE2Njc0MzI2MDd9._DROxxwnALiplipM_lOAP48iLRHaQWVBxXxmB1fYASo
+
+
+//POST estudiante
+###
+POST http://localhost:3500/api/estudiantes
+Content-Type: application/json
+
+{
+    "nombre": "Francisco Navarro",
+    "correo": "Fran@correo.de",
+    "materias":{
+        "nombre": "Matemática",
+        "nota": 100,
+        "comentario": "¡Caracoles hervidos Batman! ahre XD"
+    }
+}
+
+//PUT estudiante
+###
+PUT http://localhost:3500/api/estudiantes/6362895477bef772f285ddcd
+Content-Type: application/json
+
+{   
+    "nombre": "Aurora Aksnes",
+    "correo": "AuroraAksnesMiamorcito:D@jiji.com"
+}
+
+//DELETE estudiante
+###
+DELETE http://localhost:3500/api/estudiantes/636288b877bef772f285ddcb
+
+
+//GET materias
+###
+GET http://localhost:3500/api/materias/63629de5f422123017a29359
+
+//POST materia
+###
+post http://localhost:3500/api/materias/63629de5f422123017a29359
+Content-Type: application/json
+
+{
+    "nombre": "Inglés",
+        "nota": 100,
+        "comentario": "I think he speaks good English"
+}
+
+//DELETE materia
+###
+DELETE  http://localhost:3500/api/materias/63629de5f422123017a29359/63629de6f422123017a2935a
+
+
+//PUT materia
+###
+PUT http://localhost:3500/api/materias/63629de5f422123017a29359/6362a50f691ee5ed92f3f4ce
+Content-Type: application/json
+
+{
+    "nota": 90,
+    "comentario": "Debe un trabajo todavía"
+}
